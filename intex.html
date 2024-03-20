@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Factorial Generator</table></title>
+    <link rel="stylesheet" href="factorial.css">
+</head>
+<body>
+    <div class="container w-50 p-3 text-center mt-5  border text-light"> 
+        <h1 class="mt-3">Factorial Generator</h1>
+        <input id="n" class="form-control mt-4" type="text"  placeholder="Enter the number">
+        <!-- <input id="range" class="form-control mt-3" type="text"  placeholder="Enter the range of table"> -->
+
+<button onclick="factCheck()" class=" mt-4">Display </button>
+    </div>
+   
+</body>
+<script>
+   function factCheck(){
+        var data=Number(n.value)
+        if(data<=0){
+            alert('Invalid number')
+        }else{
+            var fact=1
+            for(let i=data;i>0;i--){
+                fact *=i
+            }
+        }
+        alert(`Factorial of ${data} is ${fact}`)
+    }
+
+    
+</script>
+</html>
